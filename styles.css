@@ -397,19 +397,27 @@
 }
 
 .video__item-iowa {
+    position: relative;
     width: 100%;
     background-image: url(images/video__item-bg-iowa.jpg);
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .video__item-wyoming {
+    position: relative;
     width: 100%;
     background-image: url(images/video__item-bg-wyoming.jpg);
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .video__item-bg {
-    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 1);
+    z-index: 2;
+    border: 1px blue solid;
 }
 
 .video__icon_play {
@@ -417,6 +425,7 @@
 }
 
 .video__duration {
+    max-width: 84px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
