@@ -353,7 +353,7 @@
     align-items: center;
     max-width: 1184px;
     max-height: 580px;
-    margin: auto;
+    margin: 0 auto 102px;
     border: 1px pink solid;
 }
 
@@ -452,4 +452,85 @@
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    max-width: 1184px;
+    margin: auto;
+    align-items: center;
+    border: 1px pink solid;
+}
+
+.comments__content-title {
+    max-width: 800px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 108.9%;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px pink solid;
+}
+
+.comments__content-subtitle {
+    max-width: 640px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px pink solid;
+}
+
+.comments__container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: 1px pink solid;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    border: 1px pink solid;
+}
+
+.comments__image {
+    width: 100px;
+    height: 100px;
+    align-self: start;
+    border-radius: 50%;
+    margin-bottom: 42px;
+    border: 1px pink solid;
+}
+
+.comment__quote {
+    max-width: 382;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 1px pink solid;
+}
+
+.comment__author {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 1px pink solid;
 }
