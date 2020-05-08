@@ -538,7 +538,7 @@
     max-height: 594px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto 160px;
     padding: 0;
     background-image: url(images/cover__cover-bg.jpg);
     background-position: center;
@@ -572,5 +572,41 @@
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+    color: #FFFFFF;
+}
+
+.footer {
+    max-width: 1184px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+    border: 1px pink solid;
+}
+
+.footer__link {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.footer__copyright {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 41px;
+    text-align: right;
     color: #FFFFFF;
 }
