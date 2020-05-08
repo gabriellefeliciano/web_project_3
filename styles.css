@@ -390,7 +390,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 18px;
     list-style: none;
-    max-height: 408px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -398,22 +397,23 @@
 }
 
 .video__item-iowa {
-    display: flex;
-    flex-direction: column;
-    background-color: #000000;
-    background-image: url(./images/video__item-bg-iowa.jpg);
+    width: 100%;
+    background-image: url(images/video__item-bg-iowa.jpg);
+    background-repeat: no-repeat;
 }
 
 .video__item-wyoming {
-    display: flex;
-    flex-direction: column;
-    background-color: #000000;
-    background-image: url(./images/video__item-bg-wyoming.jpg);
+    width: 100%;
+    background-image: url(images/video__item-bg-wyoming.jpg);
+    background-repeat: no-repeat;
+}
+
+.video__item-bg {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video__icon_play {
-    display: flex;
-    margin: 30px 0 94px 30px;
+
 }
 
 .video__duration {
@@ -427,6 +427,7 @@
 }
 
 .video__title {
+    max-width: 322px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -436,16 +437,10 @@
 }
 
 .video__subtitle {
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
-    
-}
-
-.video__item-bg {
-    object-fit: contain;
-    background-repeat: no-repeat;
 }
