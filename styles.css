@@ -104,19 +104,23 @@
   }
 
 .page {
-    max-width: 1440px;
-    margin: 0;
+    max-width: 1280px;
+    min-width: 320px;
+    max-height: 11581px;
+    min-height: 8131px;
+    margin: auto;
     background-color: #2A2C2F;
     font-family: 'Inter';
 }
 
 .header {
     display: flex;
-    max-width: 1440;
-    height: 46px;
+    max-width: 92.5%;
+    min-width: 24%;
+    max-height: 46px;
+    min-height: 36.27px;
     padding: 0;
-    margin: 33.79px 128px 50px;
-    border: 1px pink solid;
+    margin: 33.79px auto 50px;
     justify-content: space-between;
 }
 
@@ -124,8 +128,7 @@
     display: inline-flex;
     list-style: none;
     margin-left: 18px;
-    margin-right: 0;
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -135,15 +138,16 @@
 }
 
 .lead {
-    width: 985px;
-    height: 950px;
+    display: flex;
+    flex-direction: column;
+    max-width: 83%;
     margin: 0 auto 81px;
     padding: 0;
-    border: 1px pink solid;
 }
 
 .lead__title {
-    margin: 0 0 50px 0px;
+    max-width: 782px;
+    margin: 0 auto 50px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -151,32 +155,30 @@
     line-height: 93px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .lead__subtitle {
     max-width: 583px;
     margin: 0 auto 78px;
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .lead__image {
-    max-width: 985px;
+    width: 100%;
+    margin: 0 auto 10px;
     max-height: 554px;
-    object-fit: contain;
+    object-fit: cover;
     padding: 0;
-    margin: 0 0 10px 0;
-    border: 1px pink solid;
 }
 
 .lead__caption {
+    max-width: inherit;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -185,18 +187,18 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .intro {
-    max-width: 928px;
+    max-width: 83%;
     max-height: 869px;
-    margin: 0 529px 82px 228px;
+    min-width: 288px;
+    margin: 0 auto 82px;
     padding: 0;
-    border: 1px pink solid;
 }
 
 .intro__title {
+    max-width: 61%;
     padding: 0;
     margin: 0;
     font-family: 'Inter';
@@ -208,7 +210,7 @@
 }
 
 .intro__content-row {
-    max-width: 720px;
+    max-width: 65%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -218,6 +220,8 @@
 }
 
 .intro__content-row__text {
+    max-width: 70%;
+    flex-wrap: wrap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -227,9 +231,10 @@
 }
 
 .intro__text {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    max-height: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -245,12 +250,11 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
-    max-width: 1184px;
-    border: 1px pink solid;
+    max-width: 92.5%;
 }
 
 .places {
-    max-width: 986px;
+    max-width: 83%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -258,19 +262,17 @@
 
 .place {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.2fr;
     grid-template-rows: 1fr 3fr;
     gap: 60px 40px;
-    max-width: 986px;
-    max-height: 1132px;
+    max-width: 92.5%;
     padding: 0;
     margin: 0 0 71px 0;
-    border: 1px pink solid;
 }
 
 .place__title {
     max-width: 457px;
-    height: 100%;
+    align-self: flex-end;
     margin: 0;
     padding: 0;
     font-family: 'Inter';
@@ -279,17 +281,16 @@
     font-size: 72px;
     line-height: 65px;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .place__website {
     grid-column: 2/3;
     display: flex;
     flex-direction: column; 
+    align-self: flex-end;
     min-height: 46px;
     padding: 0;
     margin: 0;
-    border: 1px pink solid;
 }
 
 .place__url-heading {
@@ -302,7 +303,6 @@
     line-height: 20px;
     letter-spacing: 0.2em;
     color: #AAAAAA;
-    border: 1px pink solid;
 }
 
 .place__url {
@@ -315,27 +315,23 @@
     line-height: 30px;
     text-decoration-line: underline;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .place__image {
     grid-row: 2/3;
-    object-fit: contain;
-    border: 1px pink solid;
+    object-fit: cover;
 }
 
 .paragraph__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
     align-items: flex-start;
+    row-gap: 25px;
     margin: 0;
     padding: 0;
-    border: 1px pink solid;
 }
 
 .place__paragraph {
-    max-width: 484px;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     font-family: 'Inter';
@@ -344,17 +340,15 @@
     font-size: 18px;
     line-height: 30px;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1184px;
+    max-width: 92.5%;
     max-height: 580px;
     margin: 0 auto 102px;
-    border: 1px pink solid;
 }
 
 .video__content-title {
@@ -368,7 +362,6 @@
     line-height: 78px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .video__content-subtitle {
@@ -382,7 +375,6 @@
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .video__container {
@@ -393,7 +385,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 1px red solid;
 }
 
 .video__item-iowa {
@@ -414,16 +405,21 @@
 
 .video__item-bg {
     width: 100%;
-    height: 100%;
     background-color:rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
 }
 
 .video__icon_play {
-
+    display: flex;
+    margin: 0 512px 94px 30px;
+    padding-top: 30px;
 }
 
 .video__duration {
     max-width: 84px;
+    display: flex;
+    margin: 0 509px 12px 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -434,7 +430,10 @@
 }
 
 .video__title {
+    display: flex;
     max-width: 322px;
+    min-height: 73px;
+    margin: 0 231px 18px 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -444,6 +443,10 @@
 }
 
 .video__subtitle {
+    display: flex;
+    min-width: 90%;
+    margin: 0 379px 0px 30px;
+    padding-bottom: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -455,16 +458,16 @@
 .comments {
     display: flex;
     flex-direction: column;
-    max-width: 1184px;
+    max-width: 92.5%;
     margin: 0 auto 103px;
     align-items: center;
-    border: 1px pink solid;
 }
 
 .comments__content-title {
     max-width: 800px;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 48px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -472,11 +475,11 @@
     line-height: 108.9%;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .comments__content-subtitle {
     max-width: 640px;
+    margin-bottom: 72px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -484,23 +487,23 @@
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .comments__container {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    max-width: 100%;
+    min-height: 245px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 19px;
     padding: 0;
     margin: 0;
-    border: 1px pink solid;
 }
 
 .comment {
     display: flex;
     flex-direction: column;
-    border: 1px pink solid;
+    justify-content: space-between;
 }
 
 .comments__image {
@@ -509,18 +512,17 @@
     align-self: start;
     border-radius: 50%;
     margin-bottom: 42px;
-    border: 1px pink solid;
 }
 
 .comment__quote {
-    max-width: 382;
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .comment__author {
@@ -530,11 +532,10 @@
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
-    border: 1px pink solid;
 }
 
 .cover {
-    max-width: 1184px;
+    max-width: 92.5%;
     max-height: 594px;
     display: flex;
     flex-direction: column;
@@ -544,7 +545,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px pink solid;
 }
 
 .cover__cover-bg {
@@ -554,6 +554,7 @@
 
 .cover__title {
     max-width: 1094px;
+    margin: 274px auto 134px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -561,11 +562,11 @@
     line-height: 78px;
     text-align: center;
     color: #FFFDFD;
-    border: 1px pink solid;
 }
 
 .cover__subtitle {
     max-width: 437px;
+    margin: 0 auto 48px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -576,13 +577,13 @@
 }
 
 .footer {
-    max-width: 1184px;
-    display: flex;
-    flex-direction: row;
+    max-width: 92.5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: .4fr .6fr .6fr 3fr;
     margin: auto;
     padding: 0;
     align-content: center;
-    border: 1px pink solid;
 }
 
 .footer__link {
@@ -600,6 +601,8 @@
 
 .footer__copyright {
     display: flex;
+    position: absolute;
+    right: 0;
     margin: 0;
     padding: 0;
     font-family: 'Inter';
@@ -609,4 +612,34 @@
     line-height: 41px;
     text-align: right;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 425px) {
+    .photogrid {
+        grid-template-columns: 1fr;
+    }
+
+    .video__container {
+        grid-template-columns: 1fr;
+    }
+
+    .comments__container {
+        flex-direction: column;
+    }
+
+    .place {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 60px 40px;
+        max-width: 90%;
+        padding: 0;
+        margin: 0 0 71px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photogrid {
+        grid-template-columns: 1fr;
+    }
 }
