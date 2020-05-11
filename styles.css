@@ -315,6 +315,7 @@
     font-size: 18px;
     line-height: 30px;
     text-decoration-line: underline;
+    color: #FFF;
 }
 
 .place__image {
@@ -358,9 +359,19 @@
     background-color: rgba(0, 0, 0, .3);
 }
 
+.cover__overlay:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+.cover__link {
+    text-decoration: none;
+}
+
 .cover__title {
     max-width: 86%;
-    margin: 283px auto 32px;
+    margin: 0 auto 32px;
+    padding-top: 283px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -371,15 +382,16 @@
 }
 
 .cover__subtitle {
-    max-width: 437px;
-    padding: 0;
-    margin: 0 auto 283px;
+    max-width: 25%;
+    padding-bottom: 283px;
+    margin: 0 auto;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+    color: #FFF;
 }
 
 .footer {
