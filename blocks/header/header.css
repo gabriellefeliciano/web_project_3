@@ -1,0 +1,20 @@
+@import url(../header/__lang-link/_active/header__lang-link_active.css);
+@import url(../header/__lang-link/header__lang-link.css);
+@import url(../header/__lang/header__lang.css);
+
+.header {
+    display: flex;
+    max-width: 92.5%;
+    min-width: 24%;
+    max-height: 46px;
+    min-height: 36.27px;
+    padding: 0;
+    margin: 33.79px auto 50px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        max-width: 90%;
+    }
+}

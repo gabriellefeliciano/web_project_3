@@ -1,0 +1,14 @@
+.place__container-paragraphs {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .place__container-paragraphs {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

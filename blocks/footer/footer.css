@@ -1,0 +1,32 @@
+@import url(../footer/__link/footer__link.css);
+@import url(../footer/__copyright/footer__copyright.css);
+
+.footer {
+    max-width: 92.5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: .4fr .6fr .6fr 3fr;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 94%;
+        grid-template-columns: .1fr .1fr .1fr .1fr;
+        column-gap: 18px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        max-width: 54%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 32px;
+        margin: 0 136px 24px 16px;
+    }
+}
