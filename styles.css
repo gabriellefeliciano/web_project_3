@@ -236,8 +236,7 @@
 .intro__text {
     display: flex;
     flex-direction: column;
-    max-width: 23%;
-    max-height: 100%;
+    max-width: 17%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -362,7 +361,6 @@
 .cover__overlay:hover {
     background-color: rgba(0, 0, 0, .8);
 }
-
 
 .cover__link {
     text-decoration: none;
@@ -545,16 +543,21 @@
     }
 
     .cover__title {
-        margin: 153px auto 32px;
+        margin: 0 auto 32px;
+        padding-top: 153px;
     }
 
     .cover__subtitle {
         max-width: 42%;
-        margin: 0 auto 153px;
+        margin: 0 auto;
+        padding-bottom: 153px;
     }
 
     .footer {
         max-width: 94%;
+        grid-template-columns: .1fr .1fr .1fr .1fr;
+        column-gap: 18px;
+        align-items: center;
     }
 
     .footer__link {
@@ -673,14 +676,16 @@
         max-width: 90%;
         font-size: 32px;
         line-height: 109%;
-        margin: 51px auto 16px;
+        margin: 0 auto 16px;
+        padding-top: 51px;
     }
 
     .cover__subtitle {
         max-width: 90%;
         font-size: 16px;
         line-height: 114%;
-        margin: 0 auto 50px;
+        margin: 0 auto;
+        padding-bottom: 50px;
     }
 
     .footer {
