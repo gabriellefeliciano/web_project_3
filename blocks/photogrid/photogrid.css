@@ -21,7 +21,7 @@
 @media screen and (max-width: 768px) {
     .photogrid {
         max-width: 94%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 352px);
     }
 }
 

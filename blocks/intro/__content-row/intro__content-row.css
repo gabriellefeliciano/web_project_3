@@ -1,12 +1,10 @@
-@import url(../__content-row/__text/intro__content-row__text.css);
-
 .intro__content-row {
     max-width: 65%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 167.44%;
+    line-height: 34px;
 }
 
 @media screen and (max-width: 1024px) {

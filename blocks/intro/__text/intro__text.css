@@ -1,12 +1,19 @@
 .intro__text {
     display: flex;
     flex-direction: column;
-    max-width: 17%;
+    justify-content: space-between;
+    max-width: 22%;
+    padding: 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
