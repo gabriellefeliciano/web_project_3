@@ -1,4 +1,4 @@
-@import url(../photogrid/__item/photogrid__item.css/);
+@import url(../photogrid/__item/photogrid__item.css);
 
 .photogrid {
     display: grid;
