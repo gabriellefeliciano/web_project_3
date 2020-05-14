@@ -2,8 +2,8 @@
     font-family: 'Inter';
     font-style:  normal;
     font-weight: 400;
-    src: url('./Inter_Web/Inter-Regular.woff2') format("woff2"),
-         url('./Inter_Web/Inter-Regular.woff') format("woff"),
+    src: url('./Inter_Web/Inter-Regular.woff2') format("woff2");
+    src: url('./Inter_Web/Inter-Regular.woff') format("woff"),
          url('./Inter_Desktop/Inter-Regular.otf') format("otf");
   }
 
@@ -11,16 +11,16 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('./Inter_Web/Inter-Bold.woff2') format("woff2"),
-      url('./Inter_Web/Inter-Bold.woff') format("woff"),
-      url('./Inter_Desktop/Inter-Bold.otf') format("otf");
+    src: url('./Inter_Web/Inter-Bold.woff2') format("woff2");
+    src: url('./Inter_Web/Inter-Bold.woff') format("woff"),
+         url('./Inter_Desktop/Inter-Bold.otf') format("otf");
   }
 
   @font-face {
        font-family: 'Inter';
        font-style: normal;
        font-weight: 900;
-       src: url('./Inter_Web/Inter-Black.woff2.woff2') format("woff2"),
-          url('./Inter_Web/Inter-Black.woff.woff') format("woff"),
-          url('./Inter_Desktop/Inter-Black.otf.otf') format("otf");
+       src: url('./Inter_Web/Inter-Black.woff2') format("woff2");
+       src: url('./Inter_Web/Inter-Black.woff') format("woff"),
+          url('./Inter_Desktop/Inter-Black.otf') format("otf");
   }
