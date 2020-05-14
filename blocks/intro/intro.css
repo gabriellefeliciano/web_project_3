@@ -1,8 +1,8 @@
-@import url(../intro/__title/intro__title.css);
-@import url(../intro/__text/intro__text.css);
-@import url(../intro/__content-text/intro__content-text.css);
-@import url(../intro/__content-row/intro__content-row.css);
-@import url(../intro/__bold/intro__bold.css);
+@import url('../intro/__title/intro__title.css');
+@import url('../intro/__text/intro__text.css');
+@import url('../intro/__content-text/intro__content-text.css');
+@import url('../intro/__content-row/intro__content-row.css');
+@import url('../intro/__bold/intro__bold.css');
 
 .intro {
     max-width: 77%;
